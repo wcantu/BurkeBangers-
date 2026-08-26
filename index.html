@@ -558,7 +558,6 @@ function updateCount(){
   var missing = list.filter(function(t){ return t.ok === false; }).length;
   document.getElementById('countLine').textContent = found + '/' + list.length + ' LOADED';
   document.getElementById('hint').textContent = missing
-    ? 'Drop the missing mp3s into the ' + MUSIC_DIR + ' folder, then check the filenames match the list at the top of index.html.'
     : 'All sixteen accounted for. Hit play.';
 }
 updateCount();
