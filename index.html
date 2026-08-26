@@ -557,8 +557,7 @@ function updateCount(){
   var found = list.filter(function(t){ return t.ok === true; }).length;
   var missing = list.filter(function(t){ return t.ok === false; }).length;
   document.getElementById('countLine').textContent = found + '/' + list.length + ' LOADED';
-  document.getElementById('hint').textContent = missing
-    : 'All sixteen accounted for. Hit play.';
+  document.getElementById('hint').textContent = 'All sixteen accounted for. Hit play.';
 }
 updateCount();
 
